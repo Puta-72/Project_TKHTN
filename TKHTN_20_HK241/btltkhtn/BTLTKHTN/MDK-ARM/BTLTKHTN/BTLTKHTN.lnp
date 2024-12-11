@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"btltkhtn\startup_stm32f103xb.o"
+"btltkhtn\clcd_i2c.o"
+"btltkhtn\main.o"
+"btltkhtn\stm32f1xx_it.o"
+"btltkhtn\stm32f1xx_hal_msp.o"
+"btltkhtn\stm32f1xx_hal_gpio_ex.o"
+"btltkhtn\stm32f1xx_hal_i2c.o"
+"btltkhtn\stm32f1xx_hal.o"
+"btltkhtn\stm32f1xx_hal_rcc.o"
+"btltkhtn\stm32f1xx_hal_rcc_ex.o"
+"btltkhtn\stm32f1xx_hal_gpio.o"
+"btltkhtn\stm32f1xx_hal_dma.o"
+"btltkhtn\stm32f1xx_hal_cortex.o"
+"btltkhtn\stm32f1xx_hal_pwr.o"
+"btltkhtn\stm32f1xx_hal_flash.o"
+"btltkhtn\stm32f1xx_hal_flash_ex.o"
+"btltkhtn\stm32f1xx_hal_exti.o"
+"btltkhtn\stm32f1xx_hal_tim.o"
+"btltkhtn\stm32f1xx_hal_tim_ex.o"
+"btltkhtn\system_stm32f1xx.o"
+--strict --scatter "BTLTKHTN\BTLTKHTN.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BTLTKHTN.map" -o BTLTKHTN\BTLTKHTN.axf
